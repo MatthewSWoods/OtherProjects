@@ -107,7 +107,7 @@ if __name__ == "__main__":
         print(sort_and_display(balls))
         print(Style.RESET_ALL) # reset stlye to remove background colour
 
-        # query user to regenerate numbers of end program
+        # query user to regenerate numbers or to end program
         while True:
             retry_condition = str(input("Generate new numbers? (y/n) "))
             if (retry_condition == 'y') or (retry_condition == 'Y'):
