@@ -4,9 +4,9 @@ Simple lottery number generator terminal app by Matthew Woods for Dubber Program
 non-standard module requirements:
 colorama>=0.4.3
 
-To Expand to 7+ balls, simply initiate a new intance of the LotteryBall class after line 73
-and append to the list named 'balls', this can be in theory done up to 49 balls before there
-are no more to chose from.
+To Expand to 7+ balls, simply initiate a new intance of the LotteryBall class after the 'ball_6'
+instance and append to the list named 'balls', this can be in theory done up to 49 balls before 
+there are no more to chose from.
 """
 # Imports
 import operator
@@ -105,7 +105,7 @@ if __name__ == "__main__":
         # display results
         print("Generated numbers:")
         print(sort_and_display(balls))
-        print(Style.RESET_ALL) # reset stlye to remove background colour
+        print(Style.RESET_ALL) # reset style to remove background colour
 
         # query user to regenerate numbers or to end program
         while True:
