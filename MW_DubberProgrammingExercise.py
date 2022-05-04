@@ -80,7 +80,11 @@ def welcome():
     """
     Clears the terminal screen, and displays a title bar.
     """
-    os.system('cls')           
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
+
     print("**************************************************")
     print("*** Dubber Programming challenge - Lottery App ***")
     print("**************************************************")
@@ -105,7 +109,8 @@ if __name__ == "__main__":
         # display results
         print("Generated numbers:")
         print(sort_and_display(balls))
-        print(Style.RESET_ALL) # reset style to remove background colour
+        print(Style.RESET_ALL)  # reset style to remove background colour
+
 
         # query user to regenerate numbers or to end program
         while True:
